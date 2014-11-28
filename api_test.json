@@ -1,0 +1,17 @@
+{
+   "environment":{
+       "host" : "10.117.168.113",
+       "port" : 443,
+       "server_username" : "root",
+       "server_password" : "vmware",
+       "api_retry_count" : 5,
+       "task_poll_interval" : 5,
+       "scheme" : "https"
+   },
+   "test_poweron_instance": {
+       "vm_name": "vm-254"        
+   },
+   "test_poweroff_instance": {
+       "vm_name" : "vm-254"
+   }
+}

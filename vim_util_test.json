@@ -1,0 +1,35 @@
+{
+   "environment":{
+       "host" : "10.117.168.113",
+       "port" : 443,
+       "server_username" : "root",
+       "server_password" : "vmware",
+       "api_retry_count" : 5,
+       "task_poll_interval" : 5,
+       "scheme" : "https"
+   },
+   "test_get_objects": {
+       "_type": "HostSystem",        
+   	"host_ips": ["10.117.168.112", "10.117.171.200"]
+   },
+  "test_get_objects_with_properties": {
+       "_type": "Datastore",
+       "datastore_infos":[
+           {"name": "datastore1"} 
+       ]
+   },
+   "test_get_object_properties": {
+       "host_id" : "host-29",
+       "_type" : "HostSystem",
+       "numCpuCores" : 12,
+       "numCpuThreads" : 24
+   },
+   
+   "test_register_extension": {
+       "key" : "test_register_extension"
+   },
+   
+   "test_get_vc_version": {
+       "vc_version" : "5.5.0"
+   }
+}

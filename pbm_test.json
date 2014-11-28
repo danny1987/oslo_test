@@ -1,0 +1,22 @@
+{
+    "environment":{
+        "host" : "10.117.168.113",
+        "port" : 443,
+        "server_username" : "root",
+        "server_password" : "vmware",
+        "api_retry_count" : 5,
+        "task_poll_interval" : 5,
+        "scheme" : "https"
+    },
+    "test_get_all_profiles": {
+        "profile_names": ["profile-1", "profile-2"]    
+    },
+   "test_get_profile_id_by_name": {
+        "profile_name": "profile-2",
+        "profile_id": "0d3247a6-dfe9-489f-ad89-df6ad7c259c0"
+    },
+    "test_filter_hubs_by_profile": {
+        "unique_id" : "0d3247a6-dfe9-489f-ad89-df6ad7c259c0",
+        "datastores" : ["datastore1", "datastore30"]
+    }
+}
